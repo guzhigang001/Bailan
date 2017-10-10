@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgound_fcfcfc"
+              android:orientation="vertical">
+
+
+    <com.zhxu.recyclerview.layoutmanager.PullRecyclerViewGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/userinfo_my"/>
+
+                <GridView
+                    android:id="@+id/gv_title_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchMode="columnWidth"
+                    android:layout_marginLeft="@dimen/ui_16_dp"
+                    android:layout_marginRight="@dimen/ui_16_dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="@dimen/ui_10_dp"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="8.0dip"
+                    android:background="@color/black_alpha_03" />
+
+                <com.example.ggxiaozhi.store.the_basket.view.widget.MyEnterLayout
+                    android:id="@+id/book_game_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_normal_selector" />
+
+                <com.example.ggxiaozhi.store.the_basket.view.widget.MyEnterLayout
+                    android:id="@+id/buy_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_normal_selector" />
+
+                <com.example.ggxiaozhi.store.the_basket.view.widget.MyEnterLayout
+                    android:id="@+id/huaban_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_normal_selector" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="8.0dip"
+                    android:background="@color/black_alpha_03" />
+
+
+                <com.example.ggxiaozhi.store.the_basket.view.widget.MyEnterLayout
+                    android:id="@+id/setting_computer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_normal_selector" />
+
+                <com.example.ggxiaozhi.store.the_basket.view.widget.MyEnterLayout
+                    android:id="@+id/faq_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_normal_selector" />
+
+                <com.example.ggxiaozhi.store.the_basket.view.widget.MyEnterLayout
+                    android:id="@+id/check_update_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_normal_selector" />
+
+                <com.example.ggxiaozhi.store.the_basket.view.widget.MyEnterLayout
+                    android:id="@+id/about_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_normal_selector" />
+            </LinearLayout>
+        </ScrollView>
+    </com.zhxu.recyclerview.layoutmanager.PullRecyclerViewGroup>
+
+</LinearLayout>

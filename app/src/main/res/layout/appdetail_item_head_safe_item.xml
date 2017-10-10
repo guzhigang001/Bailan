@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/safe_checker_textview"
+            style="@style/detail_card_introduce_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="华东"/>
+
+        <TextView
+            android:id="@+id/safe_checker_label"
+            style="@style/detail_card_introduce_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:text="检测专员"
+            android:layout_toLeftOf="@id/safe_checker_textview"/>
+
+        <ImageView
+            android:id="@+id/detail_head_app_icon_imageview"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/detail_safe_desc_textview"
+            style="@style/detail_card_introduce_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_toLeftOf="@id/safe_checker_label"
+            android:layout_toRightOf="@id/detail_head_app_icon_imageview"
+            android:paddingBottom="8.0dip"
+            android:paddingTop="8.0dip" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_below="@id/detail_safe_desc_textview"
+        android:layout_marginLeft="32.0dip"
+        android:background="@drawable/list_divider_holo_light" />
+</LinearLayout>

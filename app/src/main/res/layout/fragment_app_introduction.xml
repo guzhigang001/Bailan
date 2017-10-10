@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgound_fcfcfc"
+              android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/app_introduction_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/app_detail_gallery_horizontalscrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.0dip"
+                android:layout_marginTop="6.0dip"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/app_detail_gallery_container_linearlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+            </HorizontalScrollView>
+
+            <include
+                android:id="@+id/appdetail_info"
+                layout="@layout/appdetail_item_appinfo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/ui_16_dp"
+                android:paddingRight="@dimen/ui_16_dp">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:layout_marginBottom="16.0dip"
+                    android:layout_marginTop="16.0dip"
+                    android:background="@drawable/list_divider_holo_light"/>
+
+
+                <com.example.ggxiaozhi.store.the_basket.view.widget.FlowLayout
+                    android:id="@+id/flowLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="50dp"/>
+
+                <TextView
+                    android:id="@+id/detail_desc_title_textview"
+                    style="@style/detail_card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8.0dip"
+                    android:text="应用标签"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

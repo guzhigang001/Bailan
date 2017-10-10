@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SearchBarLayout">
+        <attr name="search_bar_enable_shadow" format="boolean" />
+        <attr name="search_bar_color_normal" format="color" />
+        <attr name="search_bar_color_pressed" format="color" />
+        <attr name="search_bar_color_button" format="color" />
+        <attr name="search_bar_color_shadow" format="color" />
+        <attr name="search_bar_shadow_padding" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="sub_tab">
+
+        <attr name="textSize" format="dimension" />
+        <attr name="textSelectColor" format="color" />
+        <attr name="textUnSelectColor" format="color" />
+        <attr name="round_left_text" format="string"/>
+        <attr name="round_none_text" format="string"/>
+        <attr name="round_right_text" format="string"/>
+        <attr name="round_all_unselected" format="reference|color" />
+        <attr name="round_left_unselected" format="reference|color" />
+        <attr name="round_right_unselected" format="reference|color" />
+        <attr name="round_none_unselected" format="reference|color" />
+        <attr name="round_all_selected" format="reference|color" />
+        <attr name="round_left_selected" format="reference|color" />
+        <attr name="round_right_selected" format="reference|color" />
+        <attr name="round_none_selected" format="reference|color" />
+        <attr name="dividerDrawable" format="reference|color" />
+        <attr name="dividerWidth" format="integer|dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="dividerHeight" format="integer|dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="paddingLeft" format="dimension" />
+        <attr name="paddingRight" format="dimension" />
+
+
+
+
+    </declare-styleable>
+
+
+    <declare-styleable name="DownloadProgressButton">
+        <attr name="normal_background_color" format="reference|color"/>
+        <attr name="normal_text_color" format="reference|color"/>
+        <attr name="loading_text_color" format="reference|color"/>
+        <attr name="loading_border_color" format="reference|color"/>
+        <attr name="loading_progress_color" format="color"/>
+        <attr name="install_color" format="reference|color"/>
+        <attr name="download_textSize" format="dimension"/>
+    </declare-styleable>
+
+    <!--图片轮播下面指示器自定义属性-->
+    <declare-styleable name="FlowIndicator">
+        <attr name="point_normal_copoint_normal_colorlor" format="color" /> <!--指示器小圆点正常颜色-->
+        <attr name="point_seleted_color" format="color" /> <!--指示器小圆点选中颜色-->
+        <attr name="radius" format="dimension" />       <!--指示器原点的半径-->
+        <attr name="count" format="integer" />          <!--指示器原点的数量-->
+        <attr name="space" format="dimension" />      <!--每个指示器原点的间隔-->
+    </declare-styleable>
+    
+    <declare-styleable name="PullRecyclerViewGroup">
+        <attr name="pull_vertical" format="boolean"/>
+    </declare-styleable>
+
+
+    <!-- 下拉刷新组件自定义属性 -->
+    <declare-styleable name="PullToRefresh">
+        <attr name="header_indicator" format="string"/>
+        <attr name="footer_indicator" format="string"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="RatioLayout">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+</resources>

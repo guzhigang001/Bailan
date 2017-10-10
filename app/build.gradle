@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+//添加如下代码，应用apt插件(使用dagger2)
+apply plugin: 'com.neenbedankt.android-apt'
+//使用(butterknife)
+apply plugin: 'android-apt'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.example.ggxiaozhi.store.the_basket"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //全局配置文件
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:3.0.2'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+
+    //工具集合 SharedPreferences 辅助类
+    compile 'com.blankj:utilcode:1.3.6'
+
+    //butterknife是一个专注于Android系统的View注入框架,可以减少大量的findViewById以及setOnClickListener代码，可视化一键生成。
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    testCompile 'junit:junit:4.12'
+
+    //指定注解处理器
+    apt 'com.google.dagger:dagger-compiler:2.0.2'
+    //dagger公用api
+    compile 'com.google.dagger:dagger:2.0.2'
+    //添加android缺失的部分javax注解
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+    //圆角图片
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile project(':recyclerviewlibrary')
+    compile project(':rxretrofitlibrary')
+}

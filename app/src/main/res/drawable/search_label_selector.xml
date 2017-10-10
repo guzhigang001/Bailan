@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="14.0dip" />
+            <solid android:color="@color/search_bar_normal_color_normal" />
+            <padding android:left="12.0dip" android:right="12.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape android:id="@android:id/background">
+            <corners android:radius="14.0dip" />
+            <solid android:color="@color/search_label_color" />
+            <padding android:left="12.0dip" android:right="12.0dip" />
+        </shape>
+    </item>
+</selector>

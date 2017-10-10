@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_all_selector"
+    android:paddingLeft="16.0dip"
+    android:paddingRight="16.0dip">
+
+    <ImageView
+        android:id="@+id/appicon"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginTop="8.0dip"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_public_arrow_right" />
+
+    <TextView
+        android:id="@+id/ItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_toLeftOf="@id/arrow_right"
+        android:layout_toRightOf="@id/appicon"
+        android:alpha="1.0"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/placeholder_for_layout"
+        android:textColor="@color/black"
+        android:textSize="@dimen/res_textsize_15sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_alignLeft="@id/ItemTitle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/arrow_right"
+        android:background="@color/devider_e3e3e3" />
+</RelativeLayout>

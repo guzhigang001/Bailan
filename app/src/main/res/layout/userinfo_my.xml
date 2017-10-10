@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/myaccount_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/account_icon"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:src="@drawable/market_mine_head_light" />
+
+                <ImageView
+                    android:id="@+id/account_detail"
+                    android:layout_width="12.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_public_arrow_right" />
+
+                <LinearLayout
+                    android:id="@+id/mine_account_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/account_detail"
+                    android:layout_toRightOf="@id/account_icon"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mine_nickname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:text="uerinfo1234"
+                        android:textSize="@dimen/textsize_main" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_marginLeft="48.0dip"
+                android:background="@drawable/list_divider_holo_light" />
+
+            <LinearLayout
+                android:id="@+id/gticket_hcoin_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/gticket_layout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal"
+                    android:paddingBottom="14.0dip"
+                    android:paddingTop="14.0dip">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/gticket_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="48.0dip"
+                            android:maxWidth="60.0dip"
+                            android:singleLine="false"
+                            android:text="游戏券"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue_text_007dff"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@+id/gticket_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.0dip"
+                            android:layout_toRightOf="@id/gticket_txt"
+                            android:alpha="0.5"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:singleLine="false"
+                            android:text="0.00"
+                            android:textColor="@color/black"
+                            android:textSize="13.0sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hcoin_layout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal"
+                    android:paddingBottom="14.0dip"
+                    android:paddingTop="14.0dip">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/hcoin_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24.0dip"
+                            android:singleLine="false"
+                            android:text="花币"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue_text_007dff"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@+id/hcoin_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.0dip"
+                            android:layout_toRightOf="@id/hcoin_txt"
+                            android:alpha="0.5"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:singleLine="false"
+                            android:text="0.00"
+                            android:textColor="@color/black"
+                            android:textSize="13.0sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/divider_line_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:background="@drawable/list_divider_holo_light" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

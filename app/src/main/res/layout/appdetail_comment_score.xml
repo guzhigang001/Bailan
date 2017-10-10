@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12.0dip"
+    android:paddingRight="16.0dip"
+    android:paddingLeft="16.0dip"
+    android:paddingTop="6.0dip">
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/detail_comment_colligation_score_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_comment_score"
+                android:textColor="@color/half_black"
+                android:textSize="@dimen/res_textsize_12dp" />
+
+            <TextView
+                android:id="@+id/app_comment_score_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:textColor="@color/title_name_black"
+                android:text="4.5分"
+                android:textSize="@dimen/res_textsize_18dp" />
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/detail_comment_colligation_stars_ratingbar"
+            style="@style/style_small_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="12.0dip"
+            android:layout_below="@id/detail_comment_colligation_score_linearlayout"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="2.0dip"
+            android:rating="0.0" />
+
+        <TextView
+            android:id="@+id/detail_comments_count_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_comment_colligation_stars_ratingbar"
+            android:layout_marginTop="2.0dip"
+            android:text="150人评分"
+            android:textColor="@color/half_black"
+            android:textSize="@dimen/res_textsize_12dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/divide_line_imageview"
+        android:layout_width="@dimen/line_width"
+        android:layout_height="64.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_toRightOf="@id/rl"
+        android:background="@drawable/list_divider_holo_light" />
+
+    <LinearLayout
+        android:id="@+id/detail_comment_stars_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/divide_line_imageview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/detail_comment_five_stars_ratingbar"
+                style="@style/style_small_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8.0dip"
+                android:maxHeight="12.0dip"
+                android:minHeight="12.0dip"
+                android:rating="5.0" />
+
+            <ProgressBar
+                android:id="@+id/detail_comment_five_stars_proportion_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3.0dip"
+                android:layout_gravity="center_vertical"
+                android:max="100"
+                android:progressDrawable="@drawable/appdetail_comment_progressbar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/detail_comment_four_stars_ratingbar"
+                style="@style/style_small_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8.0dip"
+                android:maxHeight="12.0dip"
+                android:minHeight="12.0dip"
+                android:rating="4.0" />
+
+            <ProgressBar
+                android:id="@+id/detail_comment_four_stars_proportion_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3.0dip"
+                android:layout_gravity="center_vertical"
+                android:max="100"
+                android:progressDrawable="@drawable/appdetail_comment_progressbar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/detail_comment_three_stars_ratingbar"
+                style="@style/style_small_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8.0dip"
+                android:maxHeight="12.0dip"
+                android:minHeight="12.0dip"
+                android:rating="3.0" />
+
+            <ProgressBar
+                android:id="@+id/detail_comment_three_stars_proportion_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3.0dip"
+                android:layout_gravity="center_vertical"
+                android:max="100"
+                android:progressDrawable="@drawable/appdetail_comment_progressbar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/detail_comment_two_stars_ratingbar"
+                style="@style/style_small_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8.0dip"
+                android:maxHeight="12.0dip"
+                android:minHeight="12.0dip"
+                android:rating="2.0" />
+
+            <ProgressBar
+                android:id="@+id/detail_comment_two_stars_proportion_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3.0dip"
+                android:layout_gravity="center_vertical"
+                android:max="100"
+                android:progressDrawable="@drawable/appdetail_comment_progressbar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/detail_comment_one_stars_ratingbar"
+                style="@style/style_small_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8.0dip"
+                android:maxHeight="12.0dip"
+                android:minHeight="12.0dip"
+                android:rating="1.0" />
+
+            <ProgressBar
+                android:id="@+id/detail_comment_one_stars_proportion_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3.0dip"
+                android:layout_gravity="center_vertical"
+                android:max="100"
+                android:progressDrawable="@drawable/appdetail_comment_progressbar" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

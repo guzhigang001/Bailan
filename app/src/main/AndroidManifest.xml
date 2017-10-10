@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.ggxiaozhi.store.the_basket">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="com.huawei.permission.sec.MDM.v2"/>
+    <uses-permission android:name="huawei.android.permission.MULTIWINDOW_SDK"/>
+    <uses-permission android:name="com.android.permission.SEND_HUAWEI"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="com.huawei.hwid.permission.ACCESS"/>
+    <uses-permission android:name="com.huawei.hwid.permission.CONTENT_PROVIDER"/>
+    <uses-permission android:name="com.huawei.hwid.ACTION_MAIN_SETTING_ACCESS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.huawei.systemmanager.permission.APPLY_TRIM_POLICY"/>
+    <uses-permission android:name="com.huawei.pushagent.permission.RICHMEDIA_PROVIDER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.mylauncher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="com.android.permission.RECV_HUAWEI"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.permission.system_manager_interface"/>
+    <uses-permission android:name="com.huawei.systemmanager.permission.ACCESS_INTERFACE"/>
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"/>
+    <uses-permission android:name="com.huawei.parentcontrol.permission.provider"/>
+    <uses-permission android:name="huawei.android.permission.HW_SIGNATURE_OR_SYSTEM"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.RECOVERY"/>
+    <uses-permission android:name="com.huawei.android.permission.PROTECTAREA"/>
+    <uses-permission android:name="com.huawei.hicloud.permission.hicloudLogin"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="com.huawei.appmarket.permission.SMS_SEND_RESULT"/>
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="com.huawei.KoBackup.permission.ACCESS"/>
+    <uses-permission android:name="com.hicloud.android.clone.permission.ACCESS"/>
+    <uses-permission android:name="com.android.providers.media.permission.SCAN_FOLDER"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.ACCESS_INTERFACE_NORMAL"/>
+    <uses-permission android:name="com.huawei.permission.MANAGE_TRUSTSPACE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+
+    <application
+        android:name=".base.StoreApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".mvp.view.activity.HomeActivity">
+        </activity>
+        <activity android:name=".mvp.view.activity.AppDetailActivity">
+        </activity>
+        <activity android:name=".mvp.view.activity.GalleryActivity">
+        </activity>
+        <activity android:name=".mvp.view.activity.AppMoreRecommendActivity">
+        </activity>
+        <activity android:name=".mvp.view.activity.ApkManagementActivity">
+        </activity>
+        <activity android:name=".mvp.view.activity.CategorySubscribeActivity">
+        </activity>
+        <activity android:name=".mvp.view.activity.CategoryNecessaryActivity">
+        </activity>
+        <activity android:name=".mvp.view.activity.CategoryNewActivity">
+        </activity>
+        <activity android:name=".mvp.view.activity.CategorySubjectActivity">
+        </activity>
+        <activity android:name=".mvp.view.activity.WebViewActivity">
+        </activity>
+        <activity android:name=".mvp.view.activity.CategoryToolActivity">
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.ggxiaozhi.store.the_basket.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity android:name=".mvp.view.activity.InstallAppInfoActivity">
+        </activity>
+        <activity android:name=".mvp.view.activity.CleanCacheActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,6 @@
+<resources>
+
+    <style name="notificaton_title_m" parent="@android:style/TextAppearance.Material.Notification.Title"/>
+
+
+</resources>

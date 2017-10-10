@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/AppListItem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_all_selector">
+
+    <TextView
+        android:id="@+id/appSerial"
+        android:layout_width="28.0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:layout_marginTop="10dip"
+        android:alpha="0.3"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/res_textsize_15dp"/>
+
+    <ImageView
+        android:id="@+id/appicon"
+        android:layout_width="@dimen/round_icon_width"
+        android:layout_height="@dimen/round_icon_width"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="12.0dip"
+        android:layout_marginLeft="@dimen/ui_40_dp"
+        android:layout_marginRight="12.0dip"
+        android:layout_marginTop="12.0dip"
+        android:background="@drawable/icon_default_bg"
+        android:scaleType="fitCenter"
+        android:src="@color/transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/right_middle_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16.0dip"
+        android:layout_toRightOf="@id/appicon">
+
+        <com.example.ggxiaozhi.store.the_basket.view.widget.DownloadProgressButton
+            android:id="@+id/downbtn"
+            style="@style/download_button"
+            android:layout_width="60.0dip"
+            android:layout_height="26.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8.0dip"
+            android:text="安装"
+            app:normal_background_color="@color/hms_background"
+            app:normal_text_color="@color/detail_dowanload_progressbar_color"/>/>
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6.0dip"
+            android:layout_toLeftOf="@id/downbtn"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ItemTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:alpha="1.0"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="每篇"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_main"/>
+
+            <ImageView
+                android:id="@+id/info_watch_imageview"
+                android:layout_width="18.0dip"
+                android:layout_height="18.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4.0dip"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/info_vr_imageview"
+                android:layout_width="18.0dip"
+                android:layout_height="18.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4.0dip"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/desc_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_layout"
+            android:layout_toLeftOf="@id/downbtn"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ItemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/half_black"
+                android:textSize="@dimen/app_subtitle"/>
+
+            <TextView
+                android:id="@+id/ItemText_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="17.6M"
+                android:textColor="@color/half_black"
+                android:textSize="@dimen/app_subtitle"/>
+
+            <ImageView
+                android:id="@+id/ad_imageview"
+                android:layout_width="@dimen/ad_width"
+                android:layout_height="@dimen/ad_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/ad_left_margin_list"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/memo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc_layout"
+            android:alpha="0.5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="朋友圈亮骚神奇"
+            android:textColor="@color/black"
+            android:textSize="@dimen/app_subtitle"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/appflag"
+        android:layout_width="@dimen/activity_flag_size"
+        android:layout_height="@dimen/activity_flag_size"
+        android:scaleType="fitCenter"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/devider_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_alignLeft="@id/right_middle_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16.0dip"
+        android:background="@color/devider_e3e3e3"/>
+</RelativeLayout>

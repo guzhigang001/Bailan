@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/AppListItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/list_item_all_selector">
+
+    <ImageView
+        android:id="@+id/devider_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/list_divider_holo_light" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/cs_16_dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/appicon"
+            android:layout_width="@dimen/round_icon_width"
+            android:layout_height="@dimen/round_icon_width"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginTop="12.0dip"
+            android:scaleType="fitCenter"
+            android:background="@drawable/icon_default_bg"
+            android:src="@color/transparent" />
+
+        <RelativeLayout
+            android:id="@+id/right_middle_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16.0dip"
+            android:layout_toRightOf="@id/appicon">
+
+            <com.example.ggxiaozhi.store.the_basket.view.widget.DownloadProgressButton
+                android:id="@+id/downbtn"
+                style="@style/download_button"
+                android:layout_width="60.0dip"
+                android:layout_height="26.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="安装"
+                android:layout_marginLeft="8.0dip"
+                app:normal_text_color="@color/detail_dowanload_progressbar_color"
+                app:normal_background_color="@color/hms_background"/>
+
+            <LinearLayout
+                android:id="@+id/title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6.0dip"
+                android:layout_toLeftOf="@id/downbtn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/appTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:alpha="1.0"
+                    android:ellipsize="end"
+                    android:text="每篇"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_main" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/desc_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_layout"
+                android:layout_toLeftOf="@id/downbtn"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/app_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="17.6M"
+                    android:textColor="@color/half_black"
+                    android:textSize="@dimen/app_subtitle" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/app_des"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc_layout"
+                android:alpha="0.5"
+                android:ellipsize="end"
+                android:text="朋友圈亮骚神奇"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/app_subtitle" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

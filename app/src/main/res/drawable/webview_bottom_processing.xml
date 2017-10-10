@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:id="@android:id/background">
+                <shape>
+                    <corners android:radius="17.0dip" />
+                    <stroke android:width="@dimen/stroke_line_width" android:color="@color/category_button_select_stroke" />
+                </shape>
+            </item>
+            <item android:id="@android:id/progress">
+                <clip>
+                    <shape>
+                        <corners android:radius="17.0dip" />
+                        <solid android:color="@color/category_button_select_stroke" />
+                    </shape>
+                </clip>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:id="@android:id/background">
+                <shape>
+                    <corners android:radius="17.0dip" />
+                    <stroke android:width="@dimen/stroke_line_width" android:color="@color/category_button_select_stroke" />
+                </shape>
+            </item>
+            <item android:id="@android:id/progress">
+                <clip>
+                    <shape>
+                        <corners android:radius="17.0dip" />
+                        <solid android:color="@color/detail_downloadbutton_processing" />
+                    </shape>
+                </clip>
+            </item>
+        </layer-list>
+    </item>
+</selector>

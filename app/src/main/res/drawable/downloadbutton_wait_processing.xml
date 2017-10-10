@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:id="@android:id/background">
+                <shape>
+                    <corners android:radius="15.0dip" />
+                    <solid android:color="@color/transparent" />
+                    <stroke android:width="@dimen/stroke_line_width" android:color="@color/detail_downloadbutton_processing" />
+                </shape>
+            </item>
+            <item android:id="@android:id/progress">
+                <clip>
+                    <shape>
+                        <corners android:radius="15.0dip" />
+                        <solid android:color="@color/downloadbutton_wait_processing" />
+                    </shape>
+                </clip>
+            </item>
+        </layer-list>
+    </item>
+</selector>

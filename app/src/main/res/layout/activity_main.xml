@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <ImageView
+        android:id="@+id/progressImg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:visibility="gone"
+        android:src="@drawable/progress_animation"/>
+
+    <LinearLayout
+
+        android:id="@+id/nodataIcon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/warn_image"
+            android:layout_width="66.0dip"
+            android:layout_height="66.0dip"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_manage_tip_empty" />
+
+        <TextView
+            android:id="@+id/wran_text"
+            style="@style/empty_view_textview_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/apkmanage_no_apks" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/nodata_option_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ab_bottom_emui"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nodata_localpkg_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="110.0dip"
+            android:gravity="center"
+            android:text="刷新"
+            android:drawableTop="@drawable/reresh_button_select"
+            android:textColor="@color/black"
+            android:textSize="@dimen/res_textsize_10dp" />
+
+        <TextView
+            android:id="@+id/nodata_delete_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="卸载"
+            android:drawableTop="@drawable/clean_button_select"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/res_textsize_10dp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

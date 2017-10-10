@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:addStatesFromChildren="true">
+
+    <LinearLayout
+        android:id="@+id/search_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="16.0dip"
+        android:paddingTop="5.0dip">
+
+        <ImageView
+            android:id="@+id/search_title_icon"
+            android:layout_width="18.0dip"
+            android:layout_height="18.0dip"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/title_search_icon_selector_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="16.0dip"
+        android:paddingTop="5.0dip">
+
+        <ImageView
+            android:id="@+id/search_circle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:scaleType="center"
+            android:background="@drawable/up_search_circle"
+            android:src="@drawable/title_search_icon_selector_blue" />
+    </LinearLayout>
+
+
+
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8.0dip"
+        android:layout_toLeftOf="@id/search_icon"
+        android:background="@drawable/bg_searchview_normal"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:hint="搜索应用、游戏…"
+        android:imeOptions="actionSearch|flagNoFullscreen"
+        android:inputType="text"
+        android:maxLength="50"
+        android:paddingBottom="6.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="36.0dip"
+        android:paddingTop="6.0dip"
+        android:textColor="@color/comment_text_selector"
+        android:textColorHint="@color/CS_hint_color_emui5"
+        android:textCursorDrawable="@drawable/ic_cursor"
+        android:textSize="@dimen/dialog_content" />
+
+</RelativeLayout>

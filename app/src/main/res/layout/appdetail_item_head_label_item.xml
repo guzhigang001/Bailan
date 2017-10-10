@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="4.0dip">
+
+    <TextView
+        android:id="@+id/appdetail_head_label_textview"
+        style="@style/detail_head_label"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:background="@drawable/appdetail_label_head"
+        android:gravity="center" />
+</LinearLayout>

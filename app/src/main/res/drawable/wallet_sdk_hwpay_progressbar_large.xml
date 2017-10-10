@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate android:interpolator="@android:anim/accelerate_decelerate_interpolator" android:duration="1000" android:drawable="@drawable/wallet_sdk_pb_spinner_48_inner_emui" android:fromDegrees="0.0" android:toDegrees="359.0" android:pivotX="50.0%" android:pivotY="50.0%" android:repeatCount="infinite" android:repeatMode="restart"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

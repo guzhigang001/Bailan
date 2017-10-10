@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/installedTitleView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_alpha_03">
+
+    <TextView
+        style="@style/item_content_13dp_75alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="4.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:text="@string/install_manager_installed_title"
+        android:textAllCaps="true" />
+</RelativeLayout>

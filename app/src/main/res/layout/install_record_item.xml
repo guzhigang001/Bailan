@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:maskview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:addStatesFromChildren="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:addStatesFromChildren="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="88.0dip">
+
+            <ImageView
+                android:id="@+id/localpackage_item_icon_view"
+                android:layout_width="64.0dip"
+                android:layout_height="64.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="12.0dip"
+                android:layout_marginTop="12.0dip"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16.0dip"
+                android:layout_toRightOf="@id/localpackage_item_icon_view"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/middle_layout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/localpackage_item_name_view"
+                        style="@style/item_title_true_15sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="@string/app_info_default" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/localpackage_item_name_view"
+                        android:layout_marginTop="6.0dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/localpackage_item_version_view"
+                            style="@style/content_style_13sp_50alpha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:drawablePadding="4.0dip"
+                            android:text="@string/app_info_default"
+                            android:textStyle="normal" />
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="5dp"/>
+
+                        <TextView
+                            android:id="@+id/localpackage_item_date_view"
+                            style="@style/content_style_13sp_50alpha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8.0dip"
+                            android:drawablePadding="4.0dip"
+                            android:drawableRight="@drawable/ic_public_arrow_down"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/app_info_default" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--<com.huawei.appmarket.service.appmgr.view.widget.InstallButton
+                    android:id="@id/app_open_button"
+                    style="@style/download_button"
+                    android:layout_width="60.0dip"
+                    android:layout_height="26.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8.0dip"
+                    android:text="@string/install_open" />-->
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/app_installed_split_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="92.0dip"
+                android:layout_marginRight="16.0dip"
+                android:background="@drawable/list_divider_holo_light" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/uninstall_list_actions_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginLeft="76.0dip"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/localpackage_option_button"
+                    style="@style/expand_button_13dp_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:padding="10.0dip"
+                    android:text="@string/imagetextbutton_uninstall"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/app_management_button"
+                    style="@style/expand_button_13dp_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:padding="10.0dip"
+                    android:text="@string/install_manage"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/expand_item_layout_split_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:background="@drawable/list_divider_holo_light" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

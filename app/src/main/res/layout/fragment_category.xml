@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.zhxu.recyclerview.layoutmanager.PullRecyclerViewGroup
+        android:id="@+id/PullRecyclerViewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.zhxu.recyclerview.layoutmanager.PullRecyclerViewGroup>
+
+
+    <com.example.ggxiaozhi.store.the_basket.view.widget.ViewUpSearch
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>

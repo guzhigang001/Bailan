@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="30.0dip" />
+            <stroke android:width="@dimen/subtab_dividerline_width" android:color="@color/category_button_select_stroke" />
+            <solid android:color="@color/blue_text_007dff_alpha_20" />
+        </shape>
+    </item>
+</layer-list>

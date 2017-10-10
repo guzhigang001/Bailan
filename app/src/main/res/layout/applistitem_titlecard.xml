@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/AppListItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgound_gray"
+    android:paddingLeft="16.0dip"
+    android:paddingRight="16.0dip">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@id/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_public_arrow_right" />
+
+        <TextView
+            android:id="@id/downbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="4.0dip"
+            android:layout_toLeftOf="@id/arrow_right"
+            android:background="@drawable/morebtn_color"
+            android:clickable="true"
+            android:text="@string/card_more_btn"
+            android:textAllCaps="true"
+            android:textColor="@color/half_black"
+            android:textSize="@dimen/res_textsize_13sp" />
+
+        <TextView
+            android:id="@id/ItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.75"
+            android:singleLine="true"
+            android:text="@string/placeholder_for_layout"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/res_textsize_13sp" />
+    </RelativeLayout>
+</RelativeLayout>

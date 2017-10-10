@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgound_fcfcfc"
+    tools:context="com.example.ggxiaozhi.store.the_basket.SplashActivity">
+
+    <ImageView
+        android:id="@+id/banner_img"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="112.0dip"
+        android:src="@drawable/img_banner_essential_vertical"/>
+
+    <Button
+        android:id="@+id/enter_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/gotoappcenter"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:background="@drawable/dialog_button_select"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/blue_text_007dff"/>
+</RelativeLayout>

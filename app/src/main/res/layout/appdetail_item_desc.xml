@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_desc_layout_linearlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="16.0dp"
+    android:paddingRight="16.0dp">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginBottom="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:background="@drawable/list_divider_holo_light" />
+
+
+    <TextView
+        android:id="@+id/detail_desc_title_textview"
+        style="@style/detail_card_title"
+        android:layout_marginBottom="8.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题"/>
+
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/detail_desc_content_textview"
+            style="@style/detail_card_introduce_content"
+            android:layout_gravity="top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"/>
+
+        <ImageView
+            android:id="@+id/detail_desc_folding_imageview"
+            android:layout_width="18.0dp"
+            android:layout_height="18.0dp"
+            android:layout_gravity="bottom|center|right"
+            android:background="@drawable/ic_public_arrow_down" />
+    </FrameLayout>
+</LinearLayout>

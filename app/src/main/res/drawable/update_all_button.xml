@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true">
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape>
+                    <corners android:radius="40.0dip" />
+                    <solid android:color="@color/category_button_select_pressed" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/btn_emphasis_normal_layer" />
+        </layer-list>
+    </item>
+    <item android:state_enabled="true" android:state_pressed="false">
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape>
+                    <corners android:radius="40.0dip" />
+                    <solid android:color="@color/blue_text_007dff" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/btn_emphasis_normal_layer" />
+        </layer-list>
+    </item>
+    <item android:state_enabled="false" android:state_pressed="false">
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape>
+                    <corners android:radius="40.0dip" />
+                    <stroke android:width="1.0px" android:color="@color/category_button_select_stroke" />
+                    <solid android:color="@color/blue_text_007dff_alpha_20" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custButton="http://schemas.android.com/apk/res-auto"
+    xmlns:wapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/detail_toolbar_height"
+    android:layout_gravity="bottom"
+    android:background="@color/backgound_fcfcfc"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/detail_download_button_layout_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_toolbar_height"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <FrameLayout
+            android:id="@+id/download_framelayout"
+            android:layout_width="200.0dip"
+            android:layout_height="30.0dip"
+            android:layout_centerInParent="true">
+            <com.example.ggxiaozhi.store.the_basket.view.widget.DownloadProgressButton
+                android:id="@+id/detail_download_button"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center" />
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/detail_download_share_layout_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_toLeftOf="@id/download_framelayout"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/detail_download_share_sub_layout_linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.ggxiaozhi.store.the_basket.view.widget.DetailShareButton
+                    android:id="@+id/detail_download_share_button"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:background="@drawable/appdetail_share_btn_bg"
+                    android:gravity="center"
+                    android:scaleType="center" />
+
+                <TextView
+                    android:id="@+id/detail_download_share_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/detail_share_text"
+                    android:textColor="@color/half_black"
+                    android:textSize="9.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_download_cancel_button_linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/detail_download_cancel_imageview"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:background="@drawable/appdetail_cancel_download_btn_bg"
+                    android:gravity="center"
+                    android:scaleType="center" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/detail_cancel_text"
+                    android:textColor="@color/half_black"
+                    android:textSize="9.0dip" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/detail_download_share_placeholder_view"
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_download_comment_layout_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_toRightOf="@id/download_framelayout"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/detail_download_comment_button_linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/detail_comment_imageview"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:background="@drawable/appdetail_publish_comment_btn_bg"
+                    android:gravity="center"
+                    android:scaleType="center" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/detail_comment_text"
+                    android:textColor="@color/half_black"
+                    android:textSize="9.0dip" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/detail_download_comment_placeholder_view"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_head_layout_linearlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10.0dip"
+    android:paddingTop="14.0dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="16.0dip">
+
+        <ImageView
+            android:id="@+id/detail_head_app_icon_imageview"
+            android:layout_width="72.0dip"
+            android:layout_height="72.0dip"
+            android:layout_marginRight="12.0dip"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_default_bg" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detail_head_app_name_textview"
+                style="@style/detail_card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text="微博"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/detail_head_download_count_textview"
+                style="@style/detail_card_introduce_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="12.9亿次安装"
+                android:layout_marginTop="8.0dip" />
+
+            <RatingBar
+                android:id="@+id/detail_head_app_stars_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="12.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="2.0dip"
+                android:indeterminateDrawable="@drawable/ratingbar_list"
+                android:indeterminateOnly="false"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressDrawable="@drawable/ratingbar_list"
+                android:rating="0.0" />
+
+            <RelativeLayout
+                android:id="@+id/detail_head_label_layout_linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip">
+
+                <LinearLayout
+                    android:id="@+id/detail_head_label_icon_layout_linearlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center|left"
+                    android:orientation="horizontal" >
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/detail_head_lable_folding_textview"
+                    android:layout_width="18.0dip"
+                    android:layout_height="18.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/detail_head_label_icon_layout_linearlayout"
+                    android:background="@drawable/ic_public_arrow_down" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detail_head_safe_icon_layout_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/detail_head_safe_icon_container_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip" />
+    </LinearLayout>
+</LinearLayout>
