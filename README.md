@@ -97,8 +97,6 @@
 
 >自定义选择框(SubTabNavigator)与Fragment联动，自定义TextView伸缩框等。
 
->其实点进去上面是viewpager展示图片的，但是不知道怎么搞得，聚合数据图片不提供了，也是醉了。
-
 <h2  id='7'>7. 我的</h2>
 
 ![mine.png](http://upload-images.jianshu.io/upload_images/3983615-ce46c45e226867e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
