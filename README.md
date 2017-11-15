@@ -73,7 +73,7 @@
 
 <h2  id='3'>3. 排行页</h2>
 
-![排行页.gif](http://upload-images.jianshu.io/upload_images/3983615-f8d060512d4c5c8c.gif?imageMogr2/auto-orient/strip)
+![排行页.gif](http://upload-images.jianshu.io/upload_images/3983615-72bd30390e0fc8c6.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 >多任务下载，自动安装
 
