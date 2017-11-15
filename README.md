@@ -35,7 +35,7 @@
 ------------
 
 #### 项目架构
--Retorfit2+Rxjava2+Mvp+Dagger2架构开发多层封装，高度解耦
+- Retorfit2+Rxjava2+Mvp+Dagger2架构开发多层封装，高度解耦
 
 ------------
 
