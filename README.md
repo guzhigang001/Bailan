@@ -1,6 +1,13 @@
 # BaiLan
 百篮应用市场。
 
+####  注意
+我已经将本应用用到的自定义View整理成了博客。请移步到我的博客，将会对你学习自定义View有很大帮助  
+同时项目中会在近期加入显示手机应用apk文件及安装，以及同步下载进度的功能。都会在博客中讲解。请大家多多关注
+
+[我的CSDN](http://blog.csdn.net/gg199402?viewmode=contents)  
+
+[我的简书](https://www.jianshu.com/u/70a8f4edb323)  
 ---
 #### 应用介绍
 - Android6.0运行时权限
@@ -111,10 +118,4 @@
 当时看到了码云代码管理，好奇就在那里发布了，如果想看提交记录[点这里](https://gitee.com/gg199402/events)  
 
 
-####  注意
-我已经将本应用用到的自定义View整理成了博客。请移步到我的博客，将会对你学习自定义View有很大帮助  
-同时项目中会在近期加入显示手机应用apk文件及安装，以及同步下载进度的功能。都会在博客中讲解。请大家多多关注
 
-[我的CSDN](http://blog.csdn.net/gg199402?viewmode=contents)  
-
-[我的简书](https://www.jianshu.com/u/70a8f4edb323)  
