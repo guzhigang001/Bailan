@@ -110,6 +110,10 @@
 ![mine.png](http://upload-images.jianshu.io/upload_images/3983615-ce46c45e226867e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ---
+
+#####项目细节概括图   
+![仿华为应用市场.png](http://upload-images.jianshu.io/upload_images/3983615-e1cc17b818caa010.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 这个项目是我在菜鸟窝学习的[华为应用市场](http://www.cniao5.com/course/10132)，虽然是自己从0写的，但是完全消化还差的很远在多任务下载还有些问题。后续会加入观察者模式使多页面下载进度同步。如果你拷贝后发现报错只需要把多任务下载取消，后续会解决这个BUG，如果想了解更多请点击[菜鸟窝](http://www.cniao5.com/)
 
 ---
@@ -118,5 +122,6 @@
 ---
 当时看到了码云代码管理，好奇就在那里发布了，如果想看提交记录[点这里](https://gitee.com/gg199402/events)  
 
+ 
 
 
