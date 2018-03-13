@@ -112,7 +112,8 @@
 ---
 
 #### 项目细节概括图   
-![仿华为应用市场.png](http://upload-images.jianshu.io/upload_images/3983615-81fbf35486783697.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![百篮应用.png](https://upload-images.jianshu.io/upload_images/3983615-affe5334e3d76946.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 很欣慰，当初写完的时候说把项目中的主要知识点写成博客，现在项目中80%以上的技术在我的博客中都有写出。相信即使和我一样的菜鸟也能掌握这个开源项目变成自己的
 
